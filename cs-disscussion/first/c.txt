@@ -1,0 +1,314 @@
+Contents of the .eh_frame section (loaded from c):
+
+
+00000000 0000000000000014 00000000 CIE
+  Version:               1
+  Augmentation:          "zR"
+  Code alignment factor: 1
+  Data alignment factor: -8
+  Return address column: 16
+  Augmentation data:     1b
+  DW_CFA_def_cfa: r7 (rsp) ofs 8
+  DW_CFA_offset: r16 (rip) at cfa-8
+  DW_CFA_nop
+  DW_CFA_nop
+
+00000018 0000000000000014 0000001c FDE cie=00000000 pc=0000000000001040..0000000000001066
+  DW_CFA_advance_loc: 4 to 0000000000001044
+  DW_CFA_undefined: r16 (rip)
+  DW_CFA_nop
+  DW_CFA_nop
+  DW_CFA_nop
+  DW_CFA_nop
+
+00000030 0000000000000024 00000034 FDE cie=00000000 pc=0000000000001020..0000000000001030
+  DW_CFA_def_cfa_offset: 16
+  DW_CFA_advance_loc: 6 to 0000000000001026
+  DW_CFA_def_cfa_offset: 24
+  DW_CFA_advance_loc: 10 to 0000000000001030
+  DW_CFA_def_cfa_expression (DW_OP_breg7 (rsp): 8; DW_OP_breg16 (rip): 0; DW_OP_lit15; DW_OP_and; DW_OP_lit10; DW_OP_ge; DW_OP_lit3; DW_OP_shl; DW_OP_plus)
+  DW_CFA_nop
+  DW_CFA_nop
+  DW_CFA_nop
+  DW_CFA_nop
+
+00000058 0000000000000014 0000005c FDE cie=00000000 pc=0000000000001030..0000000000001040
+  DW_CFA_nop
+  DW_CFA_nop
+  DW_CFA_nop
+  DW_CFA_nop
+  DW_CFA_nop
+  DW_CFA_nop
+  DW_CFA_nop
+
+00000070 000000000000001c 00000074 FDE cie=00000000 pc=0000000000001129..000000000000113d
+  DW_CFA_advance_loc: 5 to 000000000000112e
+  DW_CFA_def_cfa_offset: 16
+  DW_CFA_offset: r6 (rbp) at cfa-16
+  DW_CFA_advance_loc: 3 to 0000000000001131
+  DW_CFA_def_cfa_register: r6 (rbp)
+  DW_CFA_advance_loc: 11 to 000000000000113c
+  DW_CFA_def_cfa: r7 (rsp) ofs 8
+  DW_CFA_nop
+  DW_CFA_nop
+  DW_CFA_nop
+
+00000090 000000000000001c 00000094 FDE cie=00000000 pc=000000000000113d..000000000000115c
+  DW_CFA_advance_loc: 5 to 0000000000001142
+  DW_CFA_def_cfa_offset: 16
+  DW_CFA_offset: r6 (rbp) at cfa-16
+  DW_CFA_advance_loc: 3 to 0000000000001145
+  DW_CFA_def_cfa_register: r6 (rbp)
+  DW_CFA_advance_loc: 22 to 000000000000115b
+  DW_CFA_def_cfa: r7 (rsp) ofs 8
+  DW_CFA_nop
+  DW_CFA_nop
+  DW_CFA_nop
+
+000000b0 ZERO terminator
+
+
+Contents of the .debug_aranges section (loaded from c):
+
+  长度：                    44
+  版本：                    2
+  .debug_info 节中的偏移量:  0x0
+  指针大小:                 8
+  节区大小:                 0
+
+    地址               长度
+    0000000000001129 0000000000000033 
+    0000000000000000 0000000000000000 
+
+Contents of the .debug_info section (loaded from c):
+
+  编译单元 @ 偏移 0x0:
+   长度：        0xac (32-bit)
+   版本：        5
+   Unit Type:     DW_UT_compile (1)
+   缩写偏移量：    0x0
+   指针大小：    8
+ <0><c>：缩写编号：3 (DW_TAG_compile_unit)
+    <d>   DW_AT_producer    : (indirect string, offset: 0x5): GNU C17 11.2.0 -mtune=generic -march=x86-64 -g -fasynchronous-unwind-tables -fstack-protector-strong -fstack-clash-protection -fcf-protection
+    <11>   DW_AT_language    : 29	(C11)
+    <12>   DW_AT_name        : (indirect line string, offset: 0x0): c.c
+    <16>   DW_AT_comp_dir    : (indirect line string, offset: 0x4): /home/heeler/文档/lab/cs-disscussion/first
+    <1a>   DW_AT_low_pc      : 0x1129
+    <22>   DW_AT_high_pc     : 0x33
+    <2a>   DW_AT_stmt_list   : 0x0
+ <1><2e>：缩写编号：4 (DW_TAG_subprogram)
+    <2f>   DW_AT_external    : 1
+    <2f>   DW_AT_name        : (indirect string, offset: 0x98): main
+    <33>   DW_AT_decl_file   : 1
+    <34>   DW_AT_decl_line   : 6
+    <35>   DW_AT_decl_column : 5
+    <36>   DW_AT_prototyped  : 1
+    <36>   DW_AT_type        : <0x6b>
+    <3a>   DW_AT_low_pc      : 0x113d
+    <42>   DW_AT_high_pc     : 0x1f
+    <4a>   DW_AT_frame_base  : 1 byte block: 9c 	(DW_OP_call_frame_cfa)
+    <4c>   DW_AT_call_all_tail_calls: 1
+    <4c>   DW_AT_sibling     : <0x6b>
+ <2><50>：缩写编号：1 (DW_TAG_formal_parameter)
+    <51>   DW_AT_name        : (indirect string, offset: 0x93): argc
+    <55>   DW_AT_decl_file   : 1
+    <55>   DW_AT_decl_line   : 6
+    <55>   DW_AT_decl_column : 14
+    <56>   DW_AT_type        : <0x6b>
+    <5a>   DW_AT_location    : 2 byte block: 91 6c 	(DW_OP_fbreg: -20)
+ <2><5d>：缩写编号：1 (DW_TAG_formal_parameter)
+    <5e>   DW_AT_name        : (indirect string, offset: 0x0): argv
+    <62>   DW_AT_decl_file   : 1
+    <62>   DW_AT_decl_line   : 6
+    <62>   DW_AT_decl_column : 27
+    <63>   DW_AT_type        : <0x72>
+    <67>   DW_AT_location    : 2 byte block: 91 60 	(DW_OP_fbreg: -32)
+ <2><6a>：缩写编号：0
+ <1><6b>：缩写编号：5 (DW_TAG_base_type)
+    <6c>   DW_AT_byte_size   : 4
+    <6d>   DW_AT_encoding    : 5	(signed)
+    <6e>   DW_AT_name        : int
+ <1><72>：缩写编号：2 (DW_TAG_pointer_type)
+    <73>   DW_AT_byte_size   : 8
+    <73>   DW_AT_type        : <0x77>
+ <1><77>：缩写编号：2 (DW_TAG_pointer_type)
+    <78>   DW_AT_byte_size   : 8
+    <78>   DW_AT_type        : <0x7c>
+ <1><7c>：缩写编号：6 (DW_TAG_base_type)
+    <7d>   DW_AT_byte_size   : 1
+    <7e>   DW_AT_encoding    : 6	(signed char)
+    <7f>   DW_AT_name        : (indirect string, offset: 0x9d): char
+ <1><83>：缩写编号：7 (DW_TAG_subprogram)
+    <84>   DW_AT_external    : 1
+    <84>   DW_AT_name        : foo
+    <88>   DW_AT_decl_file   : 1
+    <89>   DW_AT_decl_line   : 1
+    <8a>   DW_AT_decl_column : 5
+    <8b>   DW_AT_prototyped  : 1
+    <8b>   DW_AT_type        : <0x6b>
+    <8f>   DW_AT_low_pc      : 0x1129
+    <97>   DW_AT_high_pc     : 0x14
+    <9f>   DW_AT_frame_base  : 1 byte block: 9c 	(DW_OP_call_frame_cfa)
+    <a1>   DW_AT_call_all_calls: 1
+ <2><a1>：缩写编号：8 (DW_TAG_variable)
+    <a2>   DW_AT_name        : i
+    <a4>   DW_AT_decl_file   : 1
+    <a5>   DW_AT_decl_line   : 2
+    <a6>   DW_AT_decl_column : 9
+    <a7>   DW_AT_type        : <0x6b>
+    <ab>   DW_AT_location    : 2 byte block: 91 6c 	(DW_OP_fbreg: -20)
+ <2><ae>：缩写编号：0
+ <1><af>：缩写编号：0
+
+Contents of the .debug_abbrev section (loaded from c):
+
+  Number TAG (0x0)
+   1      DW_TAG_formal_parameter    [no children]
+    DW_AT_name         DW_FORM_strp
+    DW_AT_decl_file    DW_FORM_implicit_const: 1
+    DW_AT_decl_line    DW_FORM_implicit_const: 6
+    DW_AT_decl_column  DW_FORM_data1
+    DW_AT_type         DW_FORM_ref4
+    DW_AT_location     DW_FORM_exprloc
+    DW_AT value: 0     DW_FORM value: 0
+   2      DW_TAG_pointer_type    [no children]
+    DW_AT_byte_size    DW_FORM_implicit_const: 8
+    DW_AT_type         DW_FORM_ref4
+    DW_AT value: 0     DW_FORM value: 0
+   3      DW_TAG_compile_unit    [has children]
+    DW_AT_producer     DW_FORM_strp
+    DW_AT_language     DW_FORM_data1
+    DW_AT_name         DW_FORM_line_strp
+    DW_AT_comp_dir     DW_FORM_line_strp
+    DW_AT_low_pc       DW_FORM_addr
+    DW_AT_high_pc      DW_FORM_data8
+    DW_AT_stmt_list    DW_FORM_sec_offset
+    DW_AT value: 0     DW_FORM value: 0
+   4      DW_TAG_subprogram    [has children]
+    DW_AT_external     DW_FORM_flag_present
+    DW_AT_name         DW_FORM_strp
+    DW_AT_decl_file    DW_FORM_data1
+    DW_AT_decl_line    DW_FORM_data1
+    DW_AT_decl_column  DW_FORM_data1
+    DW_AT_prototyped   DW_FORM_flag_present
+    DW_AT_type         DW_FORM_ref4
+    DW_AT_low_pc       DW_FORM_addr
+    DW_AT_high_pc      DW_FORM_data8
+    DW_AT_frame_base   DW_FORM_exprloc
+    DW_AT_call_all_tail_calls DW_FORM_flag_present
+    DW_AT_sibling      DW_FORM_ref4
+    DW_AT value: 0     DW_FORM value: 0
+   5      DW_TAG_base_type    [no children]
+    DW_AT_byte_size    DW_FORM_data1
+    DW_AT_encoding     DW_FORM_data1
+    DW_AT_name         DW_FORM_string
+    DW_AT value: 0     DW_FORM value: 0
+   6      DW_TAG_base_type    [no children]
+    DW_AT_byte_size    DW_FORM_data1
+    DW_AT_encoding     DW_FORM_data1
+    DW_AT_name         DW_FORM_strp
+    DW_AT value: 0     DW_FORM value: 0
+   7      DW_TAG_subprogram    [has children]
+    DW_AT_external     DW_FORM_flag_present
+    DW_AT_name         DW_FORM_string
+    DW_AT_decl_file    DW_FORM_data1
+    DW_AT_decl_line    DW_FORM_data1
+    DW_AT_decl_column  DW_FORM_data1
+    DW_AT_prototyped   DW_FORM_flag_present
+    DW_AT_type         DW_FORM_ref4
+    DW_AT_low_pc       DW_FORM_addr
+    DW_AT_high_pc      DW_FORM_data8
+    DW_AT_frame_base   DW_FORM_exprloc
+    DW_AT_call_all_calls DW_FORM_flag_present
+    DW_AT value: 0     DW_FORM value: 0
+   8      DW_TAG_variable    [no children]
+    DW_AT_name         DW_FORM_string
+    DW_AT_decl_file    DW_FORM_data1
+    DW_AT_decl_line    DW_FORM_data1
+    DW_AT_decl_column  DW_FORM_data1
+    DW_AT_type         DW_FORM_ref4
+    DW_AT_location     DW_FORM_exprloc
+    DW_AT value: 0     DW_FORM value: 0
+
+Raw dump of debug contents of section .debug_line (loaded from c):
+
+  偏移：                       0x0
+  长度：                      91
+  DWARF 版本：                5
+  Address size (bytes):        8
+  Segment selector (bytes):    0
+  导言长度：        42
+  最小指令长度：              1
+  每个指令中最大操作码数：       1
+  “is_stmt”的初始值：       1
+  行基数：                      -5
+  行范围：                      14
+  操作码基数：                  13
+
+ 操作码:
+  Opcode 1 has 0 args
+  Opcode 2 has 1 arg
+  Opcode 3 has 1 arg
+  Opcode 4 has 1 arg
+  Opcode 5 has 1 arg
+  Opcode 6 has 0 args
+  Opcode 7 has 0 args
+  Opcode 8 has 0 args
+  Opcode 9 has 1 arg
+  Opcode 10 has 0 args
+  Opcode 11 has 0 args
+  Opcode 12 has 1 arg
+
+ The Directory Table (offset 0x22, lines 1, columns 1):
+  Entry	Name
+  0	(indirect line string, offset: 0x4): /home/heeler/文档/lab/cs-disscussion/first
+
+ The File Name Table (offset 0x2c, lines 2, columns 2):
+  Entry	Dir	Name
+  0	0	(indirect line string, offset: 0x0): c.c
+  1	0	(indirect line string, offset: 0x0): c.c
+
+ 行号语句：
+  [0x00000036]  将列设定为 14
+  [0x00000038]  扩充操作码 2： 设置地址为 0x1129
+  [0x00000043]  Copy
+  [0x00000044]  将列设定为 9
+  [0x00000046]  Special opcode 118: advance Address by 8 to 0x1131 and Line by 1 to 2
+  [0x00000047]  将列设定为 12
+  [0x00000049]  Special opcode 104: advance Address by 7 to 0x1138 and Line by 1 to 3
+  [0x0000004a]  将列设定为 1
+  [0x0000004c]  Special opcode 48: advance Address by 3 to 0x113b and Line by 1 to 4
+  [0x0000004d]  将列设定为 32
+  [0x0000004f]  Special opcode 35: advance Address by 2 to 0x113d and Line by 2 to 6
+  [0x00000050]  将列设定为 5
+  [0x00000052]  Advance PC by constant 17 to 0x114e
+  [0x00000053]  Special opcode 34: advance Address by 2 to 0x1150 and Line by 1 to 7
+  [0x00000054]  将列设定为 12
+  [0x00000056]  Special opcode 76: advance Address by 5 to 0x1155 and Line by 1 to 8
+  [0x00000057]  将列设定为 1
+  [0x00000059]  Special opcode 76: advance Address by 5 to 0x115a and Line by 1 to 9
+  [0x0000005a]  Advance PC by 2 to 0x115c
+  [0x0000005c]  扩充操作码 1： 序列结束
+
+
+Contents of the .debug_str section (loaded from c):
+
+  0x00000000 61726776 00474e55 20433137 2031312e argv.GNU C17 11.
+  0x00000010 322e3020 2d6d7475 6e653d67 656e6572 2.0 -mtune=gener
+  0x00000020 6963202d 6d617263 683d7838 362d3634 ic -march=x86-64
+  0x00000030 202d6720 2d666173 796e6368 726f6e6f  -g -fasynchrono
+  0x00000040 75732d75 6e77696e 642d7461 626c6573 us-unwind-tables
+  0x00000050 202d6673 7461636b 2d70726f 74656374  -fstack-protect
+  0x00000060 6f722d73 74726f6e 67202d66 73746163 or-strong -fstac
+  0x00000070 6b2d636c 6173682d 70726f74 65637469 k-clash-protecti
+  0x00000080 6f6e202d 6663662d 70726f74 65637469 on -fcf-protecti
+  0x00000090 6f6e0061 72676300 6d61696e 00636861 on.argc.main.cha
+  0x000000a0 7200                                r.
+
+Contents of the .debug_line_str section (loaded from c):
+
+  0x00000000 632e6300 2f686f6d 652f6865 656c6572 c.c./home/heeler
+  0x00000010 2fe69687 e6a1a32f 6c61622f 63732d64 /....../lab/cs-d
+  0x00000020 69737363 75737369 6f6e2f66 69727374 isscussion/first
+  0x00000030 00                                  .
+
