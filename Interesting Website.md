@@ -9,6 +9,7 @@
 2. [w3school](https://www.w3school.com.cn/)全世界最好的学习前端三剑客的地方，稍微接触过前端的应该都听说过他的大名，既可以学习前端，又有参考手册，个人认为比菜鸟教程好得多。  
 3. [黑马的nodejs](https://www.bilibili.com/video/BV1Ns411N7HU?share_source=copy_web)确实不错
 4. [快搜，国人用爱发电的搜索网站](https://search.chongbuluo.com/)
+5. [fourier](https://www.jezzamon.com/fourier/index.html)
 ## 一些OJ
 1. [PTA](https://pintia.cn/problem-sets?tab=0)
 2. [CF](https://codeforces.com/profile/fdgger)
